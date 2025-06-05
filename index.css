@@ -1,0 +1,146 @@
+body { 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b1e3c;
+  background-image: linear-gradient(20deg, #0b1e3c, #08009eb5);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 5px 20px;           
+  background-color: #09172f;
+  height: 70px;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #76b2f0; 
+  margin-left: 1rem; 
+  text-decoration: none;
+  font-weight: bold;
+  width: 150px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem; 
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #76b2f0; 
+}
+
+.hero p {
+  font-size: 1.2rem; 
+  margin: 1rem 0;
+}
+
+button {
+  background-color: #5b4df5;
+  border: none; 
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 2rem; 
+  padding: 2rem; 
+  flex: 1; 
+}
+
+.card { 
+  background-color: #0d2b55; 
+  padding: 2rem; 
+  border-radius: 1rem;  
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+  width: 200px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.card h3 { 
+  color: #76b2f0; 
+  margin-bottom: 0.5rem; 
+}
+
+.card p { 
+  color: #d3e3fc; 
+  margin-bottom: 1rem; 
+}
+
+.card button { 
+  background-color: #5b4df5; 
+}
+
+.expandir:hover {
+  transform: scale(1.1);
+}
+
+button.expandir:hover {
+  background-color: #070a7a;
+}
+
+.footer {
+  background-color: #00000070;
+  color: #fff;
+  text-align: center;
+  padding: 2px;
+  width: 100%;
+  border-top: 1px solid #444;
+}
+
+.hero {
+  position: relative;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url('fundo.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  border-radius: 10px;
+  color: #fff;
+}

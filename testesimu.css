@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Fredoka One', cursive;
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: pulseBg 10s infinite alternate;
+}
+
+@keyframes pulseBg {
+  0% {
+    background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  }
+  100% {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+  }
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+  backdrop-filter: blur(10px);
+  border: 2px solid #fff;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #f9d423, #ff4e50);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+#question {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button.answer-btn {
+  background: linear-gradient(to right, #42e695, #3bb2b8);
+  border: none;
+  margin: 10px 0;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button.answer-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #f7971e, #ffd200);
+}
+
+button.correct {
+  background: linear-gradient(to right, #00b09b, #96c93d) !important;
+}
+
+button.incorrect {
+  background: linear-gradient(to right, #e52d27, #b31217) !important;
+}
+
+#feedback {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffeaa7;
+}
+
+#next-btn {
+  margin-top: 20px;
+  background: linear-gradient(to right, #f12711, #f5af19);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+#score {
+  margin-top: 20px;
+  font-size: 20px;
+}
