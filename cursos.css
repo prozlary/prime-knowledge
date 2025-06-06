@@ -50,8 +50,7 @@ text-decoration: none;
    }
 
 button {
- background-color: #5b4df5;
-border: none; 
+ border: none; 
 color: white;
 padding: 15px 20px;
 border-radius: 9999px;
@@ -77,19 +76,19 @@ text-align: center;
 }
 
 .card h3 { 
-color: #76b2f0; 
+color: #ffffff; 
 margin-bottom: 4px; 
 font-size: 25px;
 }
 
 .card p { 
-color: #d3e3fc; 
+color: #ffffff; 
 margin-bottom: 1rem; 
 font-size: 17px;
 }
 
 .card button { 
-background-color: #5b4df5; 
+background-color: #1500ffc4; 
 }
 
 .courses-grid {
@@ -135,8 +134,8 @@ button.expandir:hover{
 
 .card {
   --card-gradient: rgba(0, 0, 0, 0.8);
-  --card-gradient: #5e9ad9, #0a2f66;
-  --card-gradient: rgb(10, 29, 80), rgb(46, 56, 146);
+  --card-gradient: #3370b1, #112441;
+  --card-gradient: rgb(8, 21, 56), rgb(15, 23, 100);
   --card-blend-mode: overlay;
   --card-blend-mode: multiply;
 
